@@ -1,0 +1,40 @@
+name: emergency_sos_app
+description: An Emergency SOS Alert Flutter app. Sends live location + alert SMS to saved emergency contacts, and supports one-tap emergency calling.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # ---- Custom local package (bundled in packages/sos_alert_package) ----
+  sos_alert_package:
+    path: packages/sos_alert_package
+
+  # ---- Firebase ----
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.3
+
+  # ---- Existing pub.dev packages used directly by the app UI ----
+  geolocator: ^13.0.1          # GPS location
+  permission_handler: ^11.3.1  # runtime permissions (location, sms, call, contacts)
+  url_launcher: ^6.3.1         # launch sms:/tel: intents
+  shared_preferences: ^2.3.3   # persist emergency contacts
+  vibration: ^2.0.0            # haptic feedback when SOS is triggered
+  flutter_local_notifications: ^18.0.1  # local alert notifications
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/

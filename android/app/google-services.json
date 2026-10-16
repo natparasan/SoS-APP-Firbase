@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "406111308308",
+    "firebase_url": "https://sosapp-135c2-default-rtdb.firebaseio.com",
+    "project_id": "sosapp-135c2",
+    "storage_bucket": "sosapp-135c2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406111308308:android:b34341e54afe0ba5e5b501",
+        "android_client_info": {
+          "package_name": "com.example.emergency_sos_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg2Yf6Ofu86gHRIjCJvOKj0EtTDML5cEs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
